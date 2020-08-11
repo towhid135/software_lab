@@ -1,0 +1,48 @@
+{%load static %}
+<html>
+
+<head>
+<title> library management system </title>
+</head>
+
+<body>
+
+<link rel="stylesheet" type="text/css" href="addbook.css">
+
+<div class="userbox">
+	<h2>Fill The information</h2>
+	<div class="subdiv">
+	<form action="" method="POST" enctype="multipart/form-data">
+       {%csrf_token%}
+	   <p>Image</p>
+	   <input type="file" name="img1">
+	   <p>Field</p>
+	   <input type="text" name="field1" placeholder="Enter Your Field Info">
+
+	   <p>Address</p>
+	   <input type="text" name="address1" placeholder="Enter your Address">
+
+	   <p>Phone Number</p>
+	   <input type="text" name="phone1" placeholder="Enter your phone number">
+
+	   <p>Email</p>
+	   <input type="email" name="email1" placeholder="Enter Your Email">
+
+	   <p>Achievement</p>
+	   <input type="text" name="ach1" placeholder="Enter your achievements">
+
+	   <p>Objective</p>
+	   <input type="text" name="objective1" placeholder="Enter your objective" >
+	   <p>Experience</p>
+	   <input type="text" name="exp1" placeholder="Enter your experience">
+		<input class="submit" type="submit" name="" value="Submit">
+		<input class="home" type="submit" name="" value="Home" formaction="">
+
+	</form>
+	</div>
+</div>
+
+</body>
+
+
+</html>
