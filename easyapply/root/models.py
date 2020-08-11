@@ -3,7 +3,7 @@ from django.db.models import Subquery
 from datetime import datetime,date
 
 class user(models.Model):
-    userid = models.IntegerField(default=1,primary_key=True,null = False,unique = True)
+    userid = models.AutoField(primary_key=True,null=False,unique=True)
     field = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=11)
