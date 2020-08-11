@@ -2,17 +2,17 @@
 <html>
 
 <head>
-<title> library management system </title>
+<title> Easy Apply </title>
 </head>
 
 <body>
 
-<link rel="stylesheet" type="text/css" href="addbook.css">
+<link rel="stylesheet" type="text/css" href="{%static 'user.css'%}" >
 
 <div class="userbox">
 	<h2>Fill The information</h2>
 	<div class="subdiv">
-	<form action="" method="POST" enctype="multipart/form-data">
+	<form action="" method="POST" >
        {%csrf_token%}
 	   <p>Image</p>
 	   <input type="file" name="img1">
@@ -29,13 +29,13 @@
 	   <input type="email" name="email1" placeholder="Enter Your Email">
 
 	   <p>Achievement</p>
-	   <input type="text" name="ach1" placeholder="Enter your achievements">
+	   <textarea name="achi1" rows="4" cols="50">   </textarea>
 
 	   <p>Objective</p>
-	   <input type="text" name="objective1" placeholder="Enter your objective" >
+	   <textarea name="objective1" rows="4" cols="50">  </textarea>
 	   <p>Experience</p>
-	   <input type="text" name="exp1" placeholder="Enter your experience">
-		<input class="submit" type="submit" name="" value="Submit">
+	   <textarea name="exp1" rows="4" cols="50">  </textarea>
+		<input class="submit" type="submit" name="" value="Submit" formaction="">
 		<input class="home" type="submit" name="" value="Home" formaction="">
 
 	</form>
