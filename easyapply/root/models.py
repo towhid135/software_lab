@@ -8,7 +8,7 @@ class user(models.Model):
     address = models.CharField(max_length=200)
     phone = models.CharField(max_length=11)
     email = models.EmailField(max_length=100)
-    image = models.ImageField(upload_to=None, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     achievement = models.TextField()
     objective = models.TextField()
     exp = models.TextField()

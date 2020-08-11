@@ -28,7 +28,7 @@ def register(request):
 @login_required
 def user(request):
         if (request.method == 'POST'):
-                img1 = request.POST.get("img1")
+                img1 = request.FILES.get("img1")
                 field1 = request.POST.get("field1")
                 address1 = request.POST.get("address1")
                 phone1 = request.POST.get("phone1")
