@@ -18,3 +18,27 @@ def user(request):
                 userobj.save()
                 return render(request, "user.html")
         return render(request,"user.html")
+
+def circular(request):
+        if (request.method == 'POST'):
+                title = request.POST.get("title")
+                description = request.POST.get("description")
+                salary = request.POST.get("salary")
+                requirements = request.POST.get("requirements")
+                date = request.POST.get("date")
+                circularobj = models.circular( title = title, description = description, salary = salary, requirements = requirements, date = date)
+                # print("true")
+                circularobj.save()
+                return render(request, "circular.html")
+        return render(request,"circular.html")
+
+def employer(request):
+        if (request.method == 'POST'):
+                name = request.POST.get("name")
+                address = request.POST.get("address")
+                employerobj = models.employer(company_name = name, company_address=address)
+                # print("true")
+                employerobj.save()
+                return render(request, "employer.html")
+        return render(request,"employer.html")
+

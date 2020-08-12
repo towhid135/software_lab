@@ -20,3 +20,22 @@ class skill(models.Model):
     computer = models.TextField()
     language = models.TextField()
     userid = models.ForeignKey(user,on_delete=models.CASCADE)
+
+
+class employer(models.Model):
+    e_id = models.AutoField(primary_key=True,null=False,unique=True)
+    company_name = models.CharField(max_length=200)
+    company_address=models.TextField()
+
+
+class circular(models.Model):
+    circular_id = models.AutoField(primary_key=True, null=False, unique=True)
+    e_id = models.ForeignKey(employer,null=True, on_delete=models.CASCADE)
+    title = models.TextField()
+    description = models.TextField()
+    salary = models.CharField(max_length=30)
+    requirements = models.TextField()
+    date = models.CharField(max_length=30)
+
+
+
