@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<center><h1><font color="#520419" >Welcome , {{user.username}}</font></h1></center>
+ <p>Are you candidate or employer?
+    </p>
+<p>
+    <a href="{% url 'user' %}" class="btn btn-primary">Candidate</a>
+      <a href="#" class="btn btn-primary">Employer</a>
+
+    </p>
+
+
+
+
+{% endblock%}
