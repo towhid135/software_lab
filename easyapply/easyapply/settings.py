@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'root',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -28,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -117,13 +119,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+"""STATIC_URL = '/static/'
 
-"""STATICFILES_DIRS = [
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
-]"""
+]
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+MEDIA_URL = '/media/' """
+
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+LOGIN_REDIRECT_URL = '/dashboard/'

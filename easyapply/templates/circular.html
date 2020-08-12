@@ -1,0 +1,34 @@
+{%load static %}
+<html>
+<head>
+<title> Easy Apply </title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{%static 'user.css'%} " >
+<div class="userbox">
+    <h2><center>Circular Info</center></h2>
+	<div class="subdiv">
+	<form action="" method="POST" >
+       {%csrf_token%}
+        <center>
+	   <p>Job Title
+	   <input type="text" name="title" placeholder="Enter your Job Title"></p>
+            <p>Description
+	   <input type="text" name="description" placeholder="Enter your Job Description"></p>
+            <p>Salary
+                   <input type="text" name="salary" placeholder="Enter the amount of salary you are willing to pay"></p>
+            <p>Requirements
+                   <input type="text" name="requirements" placeholder="Enter your requirements"></p>
+            <p>Last Date to apply
+                   <input type="text" name="date" placeholder="Enter the Last date to apply for the post"></p>
+
+        <br><br>
+		<input class="submit" type="submit" name="" value="Submit" formaction="">
+        </center>
+
+	</form>
+	</div>
+</div>
+</body>
+
+</html>

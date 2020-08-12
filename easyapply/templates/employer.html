@@ -1,0 +1,27 @@
+{%load static %}
+<html>
+<head>
+<title> Easy Apply </title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{%static 'user.css'%} " >
+<div class="userbox">
+    <h2><center>Employer Info</center></h2>
+	<div class="subdiv">
+	<form action="" method="POST" >
+       {%csrf_token%}
+        <center>
+	   <p>Company Name
+	   <input type="text" name="name" placeholder="Enter your Company Name"></p>
+			<p>Company Address
+	   <input type="text" name="address" placeholder="Enter your Company Address"></p>
+        <br><br>
+		<input class="submit" type="submit" name="" value="Submit" formaction="">
+        </center>
+
+	</form>
+	</div>
+</div>
+</body>
+
+</html>
