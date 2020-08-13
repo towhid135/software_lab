@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block content %}
+ <p>Academic Results</p>
+<p>
+    <a href="{% url 'addpsc' %}" class="btn btn-primary">PSC</a>
+    <br><br>
+    <a href="{% url 'addjsc' %}" class="btn btn-primary">JSC</a>
+    <br><br>
+    <a href="{% url 'addssc' %}" class="btn btn-primary">SSC</a>
+    <br><br>
+    <a href="{% url 'addhsc' %}" class="btn btn-primary">HSC</a>
+    <br><br>
+    <a href="{% url 'addhonours' %}" class="btn btn-primary">Honours</a>
+    <br><br>
+    <a href="{% url 'addmasters' %}" class="btn btn-primary">Masters</a>
+    <br><br>
+    <a href="{% url 'addphd' %}" class="btn btn-primary">PHD</a>
+    <br>
+
+
+    </p>
+
+
+{% endblock%}

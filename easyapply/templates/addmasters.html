@@ -1,0 +1,46 @@
+
+{%load static %}
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<title> Easy Apply </title>
+</head>
+
+<body>
+<br><br><br>
+<link rel="stylesheet" type="text/css" href=" " >
+<div class="w3-container w3-red">
+
+<div class="userbox">
+    <h2><center>Masters Info</center></h2>
+	<div class="subdiv">
+	<form action="" method="POST" >
+       {%csrf_token%}
+        <center>
+	   <p>University Name
+	   <input type="text" name="name" placeholder="Enter your School Name"></p>
+
+            <p>Program
+	   <input type="text" name="prgm" placeholder="Enter Your program"></p>
+
+	   <p>CGPA
+	   <input type="text" name="gpa" placeholder="Enter CGPA"></p>
+
+	   <p>Year
+	   <input type="text" name="year" placeholder="Enter Year"></p>
+        <br><br>
+
+		<input class="submit" type="submit" name="" value="Submit" formaction="">
+        </center>
+
+
+	</form>
+	</div>
+</div></div>
+
+</body>
+
+
+</html>

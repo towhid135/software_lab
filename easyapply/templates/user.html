@@ -12,12 +12,14 @@
 <div class="userbox">
 	<h2>Fill The information</h2>
 	<div class="subdiv">
-	<form action="" method="POST"  enctype="multipart/form-data">
+	<form action="/dashboard/ " method="POST"  enctype="multipart/form-data">
        {%csrf_token%}
 	   <p>Image</p>
 	   <input type="file" name="img1">
 	   <p>Field</p>
 	   <input type="text" name="field1" placeholder="Enter Your Field Info">
+		 <p>Name</p>
+	   <input type="text" name="username1" placeholder="Enter Your Field Info">
 
 	   <p>Address</p>
 	   <input type="text" name="address1" placeholder="Enter your Address">
@@ -29,13 +31,13 @@
 	   <input type="email" name="email1" placeholder="Enter Your Email">
 
 	   <p>Achievement</p>
-	   <textarea name="achi1" rows="4" cols="50">   </textarea>
+	   <textarea name="achi1" rows="4" cols="50"></textarea>
 
 	   <p>Objective</p>
-	   <textarea name="objective1" rows="4" cols="50">  </textarea>
+	   <textarea name="objective1" rows="4" cols="50"></textarea>
 	   <p>Experience</p>
-	   <textarea name="exp1" rows="4" cols="50">  </textarea>
-		<input class="submit" type="submit" name="" value="Submit" formaction="">
+	   <textarea name="exp1" rows="4" cols="50"></textarea>
+		<input class="submit" type="submit" name="" value="Submit">
 		<input class="home" type="submit" name="" value="Home" formaction="">
 
 	</form>

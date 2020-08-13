@@ -1,10 +1,16 @@
 {%load static %}
+
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
 <title> Easy Apply </title>
 </head>
+
 <body>
-<link rel="stylesheet" type="text/css" href="{%static 'user.css'%} " >
+<br><br><br>
+<link rel="stylesheet" type="text/css" href=" " >
+<div class="w3-container w3-red">
 <div class="userbox">
     <h2><center>Employer Info</center></h2>
 	<div class="subdiv">
@@ -12,9 +18,9 @@
        {%csrf_token%}
         <center>
 	   <p>Company Name
-	   <input type="text" name="name" placeholder="Enter your Company Name"></p>
+	   <input type="text" name="name" placeholder="Enter Company Name"></p>
 			<p>Company Address
-	   <input type="text" name="address" placeholder="Enter your Company Address"></p>
+	   <input type="text" name="address" placeholder="Enter Company Address"></p>
         <br><br>
 		<input class="submit" type="submit" name="" value="Submit" formaction="">
         </center>

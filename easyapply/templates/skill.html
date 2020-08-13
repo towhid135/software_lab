@@ -1,0 +1,39 @@
+{%load static %}
+<html>
+
+<head>
+<title> library management system </title>
+</head>
+
+<body>
+
+<link rel="stylesheet" type="text/css" href="{%static 'skill.css'%}">
+
+<div class="userbox">
+	<h2>Fill The information</h2>
+	<div class="subdiv">
+	<form action="" method="POST">
+       {%csrf_token%}
+
+	   <p>Soft Skills</p>
+	   <textarea name="soft1" rows="4" cols="50"></textarea>
+	   <p>Technical Skills</p>
+	   <textarea name="tech1" rows="4" cols="50"></textarea>
+	   <p>Organizational Skills</p>
+	   <textarea name="org1" rows="4" cols="50"></textarea>
+
+	   <p>Computer Skills</p>
+	   <textarea name="cp1" rows="4" cols="50"></textarea>
+	   <p>Language You Know</p>
+	   <textarea name="lang1" rows="4" cols="50"></textarea>
+		<input class="submit" type="submit" name="" value="Submit">
+		<input class="home" type="submit" name="" value="Home" formaction="">
+
+	</form>
+	</div>
+</div>
+
+</body>
+
+
+</html>

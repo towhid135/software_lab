@@ -1,27 +1,26 @@
 {%load static %}
+
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
 <title> Easy Apply </title>
 </head>
+
 <body>
-<link rel="stylesheet" type="text/css" href="{%static 'user.css'%} " >
+<br><br><br>
+<link rel="stylesheet" type="text/css" href=" " >
+<div class="w3-container w3-red">
 <div class="userbox">
-    <h2><center>Circular Info</center></h2>
+    <h2><center>Employer Info</center></h2>
 	<div class="subdiv">
 	<form action="" method="POST" >
        {%csrf_token%}
         <center>
-	   <p>Job Title
-	   <input type="text" name="title" placeholder="Enter your Job Title"></p>
-            <p>Description
-	   <input type="text" name="description" placeholder="Enter your Job Description"></p>
-            <p>Salary
-                   <input type="text" name="salary" placeholder="Enter the amount of salary you are willing to pay"></p>
-            <p>Requirements
-                   <input type="text" name="requirements" placeholder="Enter your requirements"></p>
-            <p>Last Date to apply
-                   <input type="text" name="date" placeholder="Enter the Last date to apply for the post"></p>
-
+	   <p>Company Name
+	   <input type="text" name="name" placeholder="Enter Company Name"></p>
+			<p>Company Address
+	   <input type="text" name="address" placeholder="Enter Company Address"></p>
         <br><br>
 		<input class="submit" type="submit" name="" value="Submit" formaction="">
         </center>
